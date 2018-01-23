@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/teste1/style.css">
+</head>
+<body>
+
+	<form name="Calculadora">
+	<table border="1" width="500" height="500" class="calc">
+		<tr>
+			<td colspan="5" class="calc-area">
+				<input type="text" id="visor" name="visor" size="16" placeholder="Calculadora Ignição Digital - Digite o Calculo">
+			</td>
+		</tr>
+		<tr>
+			<td onclick="Calculadora.visor.value += '7'">7</td>
+			<td onclick="Calculadora.visor.value += '8'">8</td>
+			<td onclick="Calculadora.visor.value += '9'">9</td>
+			<td onClick="Calculadora.visor.value += ' / '">/</td>
+			<td onClick="Calculadora.visor.value = ''">Clear</td>
+		</tr>
+		<tr>
+			<td onclick="Calculadora.visor.value += '4'">4</td>
+			<td onclick="Calculadora.visor.value += '5'">5</td>
+			<td onclick="Calculadora.visor.value += '6'">6</td>
+			<td onClick="Calculadora.visor.value += ' * '">*</td>
+			<td rowspan="3" onClick="Calculadora.visor.value = eval(Calculadora.visor.value)">=</td>
+		</tr>
+		<tr>
+			<td onclick="Calculadora.visor.value += '1'">1</td>
+			<td onclick="Calculadora.visor.value += '2'">2</td>
+			<td onclick="Calculadora.visor.value += '3'">3</td>
+			<td onclick="Calculadora.visor.value += '-'">-</td>
+		</tr>
+		<tr>
+			<td colspan="2" onclick="Calculadora.visor.value += '0'">0</td>
+			<td onclick="Calculadora.visor.value += '.'">,</td>
+			<td onclick="Calculadora.visor.value += '+'">+</td>
+		</tr>
+	</table>
+	</form>
+	<script>
+	console.log('Implemente a funcionalidade da Calculadora acima em javascript');
+	</script>
+</body>
+</html>
